@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vacation Form</title>
+    <link rel="stylesheet" href="../styles/vacationForm.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="icon" type="image/x-icon" href="../Img/data-science.ico">
+    <script src="../JavaScript/vacationForm.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="centered">Vacation Request Details</h1>
+    </div>
+    <div class="container">
+    <table>
+
+        <tr>
+            <td>
+                <p> Employee Name: </p>
+            </td>
+            <td>
+                <p ID="Name"></p>
+            </td>
+
+            <td>
+                <p>Employee ID:</p>
+            </td>
+            <td>
+                <p id="ID"></p>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <p>Date (from):</p>
+            </td>
+            <td>
+                <p id="from"></p>
+            </td>
+            <td>
+                <p>Date (to):</p>
+            </td>
+            <td>
+                <p id="to"></p>
+            </td>
+        </tr>
+    </table>
+    <div class="centercont">
+        <p>status:</p>
+        <p id="status" name="status" style="color: grey;">Not viewed</p>
+    </div>
+    <div>
+        <textarea readonly id="Reason">Reason</textarea>
+    </div>
+    <br>
+    <br>
+    <div class="buttons">
+        <button type="button" onclick="approveRequest()">Approve</button>
+        <button id="myButton" type="button" onclick="cancle_delete()" hidden></button>
+        <button type="button" onclick="rejectRequest()">Reject</button>
+    </div>
+    </div>
+
+</body>
+
+</html>

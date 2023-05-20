@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Employee List</title>
+  <link rel="stylesheet" href="../styles/employees_page.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="icon" type="image/x-icon" href="../Img/data-science.ico">
+  <script src="../JavaScript/employee_page.js"></script>
+
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="centered">Employees List</h1>
+  </div>
+  <main>
+    <div>
+      <!--search by name text box and submit button-->
+      <form>
+        <label for="search">Search:</label>
+        <input type="text" id="search" name="search" placeholder="Name">
+        <input class="button" type="submit" value="Search">
+        <button id="AddEmployee" class="button" type="button" onclick="location.href='add_employee.html';" class="button">Add
+          employee</button>
+      </form>
+      <br>
+      <!--Table containing employees information + buttons for the admin to delete , update ,apply for vaction or 
+          view vacation application(last two buttons are also viewed by the emplyee to apply for a vacation or
+           check if the vacation has been approved)-->
+      <div>
+        <table id="employeeTable" name="employeeTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Position</th>
+              <th>address</th>
+              <th>Phone</th>
+              <th>Gender</th>
+              <th>Marital status</th>
+              <th>Available vacations</th>
+              <th>Approved vacations</th>
+              <th>Salary</th>
+              <th>DOB</th>
+              <th>Vacation request</th>
+              <th>vacation application</th>
+
+            </tr>
+          </thead>
+         
+        </table>
+      </div>
+
+      <!--Re-direction to other pages-->
+      <div class="footer">
+        <nav>
+          <ul>
+            <li><a href="coverPage.html">Cover page</a></li>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="employees_page.html">empolyees list</a></li>
+            <li><a href="ContactPage.html">Contact us</a></li>
+          </ul>
+        </nav>
+        <br>
+        <p class="footer_text">&copy; 2023 Human Resource.</p>
+      </div>
+  </main>
+</body>
+
+</html>
