@@ -3,9 +3,9 @@
 
 <head>
   <title>Submit vacation</title>
-  <link rel="icon" type="image/x-icon" href="Img/data-science.ico">
-  <link rel="stylesheet" href="styles/Add_employee.css">
-
+  <link rel="icon" type="image/x-icon" href="../Img/data-science.ico">
+  <link rel="stylesheet" href="../styles/Add_employee.css">
+  <script src="../JavaScript/vactaionApplication.js"></script>
 </head>
 
 <body>
@@ -15,21 +15,17 @@
 
   <main>
     <div class="container">
-      <form action="employees_page.html" method="post">
+      <form  name="apply"  onsubmit="return validateForm()" action="employees_page.html"  method="post">
         <table>
           <tr>
             <td><label for="employee-id">Employee ID:</label></td>
-            <td><input type="text" id="ID" name="ID"></td>
+            <td><input class="disabled" type="text" id="employee-id" name="employee-id"  disabled></td>
             <td><label for="employee-name">Employee name:</label></td>
-            <td><input type="text" id="employee-name" name="employee-name"></td>
+            <td><input class="disabled" type="text" id="employee-name" name="employee-name"  disabled></td>
           </tr>
           <tr>
-            <td><label for="email">Email:</label></td>
-            <td><input type="email" id="email" name="email"></td>
             <td><label for="from-date">From:</label></td>
-            <td><input type="date" id="from-date" name="from-date"></td>
-          </tr>
-          <tr>
+            <td><input type="date" id="from-date" name="from-date" ></td>
             <td><label for="to-date">to:</label></td>
             <td><input type="date" id="to-date" name="to-date"></td>
           </tr>

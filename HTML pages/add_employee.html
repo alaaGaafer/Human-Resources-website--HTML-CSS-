@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+  <title>Add Employee</title>
+  <link rel="stylesheet" href="../styles/Add_employee.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="icon" type="image/x-icon" href="../Img/data-science.ico">
+  <script src="../JavaScript/addForm.js"></script>
+</head>
+<body>
+
+  <div class="header">
+    <h1 class="centered">Employees Dashboard</h1>
+  </div>
+  <div class="container">
+    <h2>Add Employee</h2>
+    <form name="apply" onsubmit="return validateForm()" action="employees_page.html" method="post">
+      <table>
+        <tr>
+          <td><label for="ID">ID:</label></td>
+          <td><input type="text" id="ID" name="ID"></td>
+          <td><label for="Name">Name:</label></td>
+          <td><input type="text" id="Name" name="Name"></td>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email"></td>
+        </tr>
+        <tr>
+          <td><label for="position">Position:</label></td>
+
+          <td><select name="position" id="position" >
+            <option value="" selected disabled>Select a position</option>
+              <option value="HR Generalist">HR Generalist</option>
+              <option value="Cyber Security Specialist">Cyber Security Specialist</option>
+              <option value="Data Scientist">Data Scientist</option>
+            </select></td>
+          <td><label for="address">Address:</label></td>
+          <td><input type="text" id="address" name="address"></td>
+          <td><label for="phone">Phone:</label></td>
+          <td><input type="tel" id="phone" name="phone"></td>
+        </tr>
+        <tr>
+          <td><label for="gender">Gender:</label></td>
+          <td><select name="gender" id="gender" >
+            <option value="" selected disabled>Select a gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select></td>
+          <td><label for="marital-status,">Marital status:</label></td>
+          <td><select name="marital-status" id="marital-status" >
+            <option value="" selected disabled>Select a state</option>
+              <option value="Married">Married</option>
+              <option value="Single">Single</option>
+              <option value="Divorced">Divorced</option>
+              <option value="widowed">widowed</option>
+            </select></td>
+          <td><label for="available-vacation-days">Available vacation days:</label></td>
+          <td><input type="number" id="available-vacation-days" name="available-vacation-days" min="0" max="21">
+          </td>
+        </tr>
+        <tr>
+          <td><label for="approved-vacation-days">Approved vacation days:</label></td>
+          <td><input type="number" id="approved-vacation-days" name="approved-vacation-days" min="0" max="21"></td>
+          <td><label for="salary">Salary:</label></td>
+          <td><input type="text" id="salary" name="salary" ></td>
+          <td><label for="Date-of-birth">Date of birth:</label></td>
+          <td><input type="date" id="DOB" name="DOB"></td>
+        </tr>
+      </table>
+
+      <br>
+      <div class="button">
+        <input id="edit&submit" class="submit-button" type="submit" value="Add Employee">
+      </div>
+    </form>
+  </div>
+  <div class="footer">
+    <nav>
+      <ul>
+        <li><a href="coverPage.html">Cover page</a></li>
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="employees_page.html">empolyees list</a></li>
+        <li><a href="ContactPage.html">Contact us</a></li>
+      </ul>
+    </nav>
+    <br>
+    <p class="footer_text">&copy; 2023 Human Resource.</p>
+  </div>
+</body>
+
+</html>

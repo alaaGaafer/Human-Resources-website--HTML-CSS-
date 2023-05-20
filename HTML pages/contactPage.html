@@ -3,9 +3,11 @@
 
 <head>
     <title>Contact Us</title>
-    <link rel="icon" type="image/x-icon" href="Img/data-science.ico">
-    <link rel="stylesheet" href="styles/contact_us.css">
-    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="icon" type="image/x-icon" href="../Img/data-science.ico">
+    <link rel="stylesheet" href="../styles/contact_us.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <script src="../JavaScript/contact.js"></script>
+
 </head>
 
 <body>
@@ -15,8 +17,8 @@
 
     <br>
     <br>
-
-    <form action="HomePage.html" method="post">
+    
+    <form action="mailto:alaa.u.gaafer@gmail.com"  onsubmit="return validateForm()" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"><br>
 
