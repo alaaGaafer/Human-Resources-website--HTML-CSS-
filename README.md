@@ -38,15 +38,6 @@ Here's a brief overview of the workflow within the vacation requesting and appro
    - Employees can view the status of their vacation requests (approved, rejected, or pending).
    - If a vacation request is approved, employees can review the details of their approved vacations.
 
-## Getting Started
-
-To run the vacation requesting and approval system locally, follow these steps:
-
-1. Clone the repository to your local machine.
-2. Install any necessary dependencies specified in the project.
-3. Set up the required database and configure the connection details.
-4. Run the application and access it through a web browser.
-5. Ensure that HR personnel and employees have separate login credentials to access the respective functionalities.
 
 ## Technologies Used
 
